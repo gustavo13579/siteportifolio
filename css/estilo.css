@@ -1,0 +1,154 @@
+/* Reset básico de estilo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.perfil{
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+}
+
+
+/* Fonte e estilo global */
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  background-image: url("../img/papelpreto.jpg");
+  color: #ffffff;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #000000;
+  color: rgb(89, 89, 89);
+  padding: 20px 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Seções principais */
+section {
+  padding: 50px 0;
+}
+
+.container {
+  width: 100%;
+  color:#f4f4f4;
+  height: auto;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color:aliceblue
+}
+
+h3 {
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+}
+
+/* Estilo para os projetos */
+.projetos-grid {
+  display: flex; /*responsividade*/
+  flex-flow: row wrap; /*direção dos itens/ se vai ficar em itens ou coluna*/
+  justify-content: space-around; /*posição dos itens na vertical*/
+  align-items: center; /*posição dos itens na horizontal*/
+}
+
+.projeto {
+  background-color: #ffffffd7;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.575);
+  width: 225px;
+}
+
+.projeto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.projeto a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #000000;
+  text-decoration: none;
+  border: 2px solid #000000;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.projeto a:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+/* Formulário de contato */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* Rodapé */
+footer {
+  background-color: #ffffffd1;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+p{
+  color: #808080;
+
+}
